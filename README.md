@@ -4,7 +4,7 @@ Digital Experience File Sync synchronizes any WebDAV-based WebSphere® Portal th
 Digital Experience File Sync pulls the theme files to your work station and uploads any changes you make. It runs on Windows, OSX, and Linux. Digital Experience File Sync is unsupported and can be used on WebSphere Portal version 8.5.
 
 # Installation
-1. Install node.js. You must have Node V0.12 to install Digital Experience File Sync.  
+1. Install node.js. You must have Node V6.8 or greater to install Digital Experience File Sync.  
 
     If you are using Windows or OSX, [download node.js](https://nodejs.org/download/) and use the appropriate installer for your system.  
 
@@ -16,11 +16,16 @@ Digital Experience File Sync pulls the theme files to your work station and uplo
 
      `npm -v`
 
-4. Download the newest stable release of [Digital Experience File Sync](https://github.com/digexp/dxsync/blob/master/release/DXSyncCLI-1.0.2.zip?raw=true).  
+2. Clone this repo.
 
-5. Extract the file.  
+3. Open a terminal, cd into the directory where you cloned this repo.
 
-6. Change to the extracted directory and run `install.cmd` if you are using Windows or `install.sh` for Linux or OSX.
+4. Run 
+
+    `npm install`
+
+5. To enable invoking dxsync from the terminal, ensure `<dxsyncDir>/bin` is added to the PATH for your OS  
+
 
 ## First Steps
 When you create a new theme for WebSphere Portal, you can edit your files locally. You can choose which directory you want to synchronize with your server. You must initialize DXSync to synchronize with a directory.
