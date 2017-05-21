@@ -22,7 +22,7 @@ Digital Experience File Sync pulls the theme files to your work station and uplo
 
 4. Run 
 
-    `npm install`
+    `npm install --production`
 
 5. To enable invoking dxsync from the terminal, ensure `<dxsyncDir>/bin` is added to the PATH for your OS  
 
